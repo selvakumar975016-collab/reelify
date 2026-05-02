@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reelify</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Poppins', sans-serif; background:#000; color:#fff; }
+
+    .container { padding:20px; }
+    .nav { display:flex; justify-content:space-between; align-items:center; }
+
+    .logo { height:50px; }
+
+    .btn {
+      padding:10px 20px;
+      border-radius:12px;
+      border:none;
+      cursor:pointer;
+      transition:0.3s ease;
+    }
+
+    .btn-white { background:#fff; color:#000; }
+
+    .btn:hover { transform:scale(1.05); opacity:0.9; }
+
+    .hero {
+      text-align:center;
+      padding:100px 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1 { font-size:48px; margin-bottom:10px; }
+
+    .hero p { color:#aaa; margin-bottom:20px; }
+
+    .grid { display:grid; gap:20px; }
+
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); }
+
+    .card {
+      background:rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding:25px;
+      border-radius:20px;
+      transition:0.3s ease;
+      animation: slideUp 1s ease;
+    }
+
+    .card:hover {
+      transform:translateY(-10px) scale(1.02);
+      background:rgba(255,255,255,0.1);
+    }
+
+    .pricing { text-align:center; padding:80px 20px; }
+
+    .pricing h2 { margin-bottom:30px; }
+
+    .footer { text-align:center; padding:20px; color:#777; }
+
+    .social { margin-top:20px; }
+
+    .social a {
+      margin:0 10px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .social a:hover { color:#ff4d6d; }
+
+    .whatsapp {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      padding:15px;
+      border-radius:50%;
+      font-size:20px;
+      color:#fff;
+      text-decoration:none;
+      box-shadow:0 0 15px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
+
+    .whatsapp:hover { transform:scale(1.1); }
+
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity:0; transform:translateY(50px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="container nav">
+    
+    <img src="C:\Users\SELVAKUMAR B\Downloads\reelify.png" alt="Reelify Logo" class="logo" />
+    <div>
+      <a href="https://www.instagram.com/reelify_std/" target="_blank">
+        <button class="btn btn-white">Instagram</button>
+      </a>
+      <a href="https://wa.me/919750168130" target="_blank">
+        <button class="btn">WhatsApp</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Grow Your Business with Reels 🚀</h1>
+    <p>Social Media • Content • Websites</p>
+    <a href="https://wa.me/919750168130" target="_blank">
+      <button class="btn btn-white">Get Started</button>
+    </a>
+  </div>
+
+  <!-- Services -->
+  <div class="container grid grid-3">
+    <div class="card">
+      <h3>Reels Editing</h3>
+      <p>Viral short-form content creation</p>
+    </div>
+    <div class="card">
+      <h3>Social Media</h3>
+      <p>Manage and grow your page</p>
+    </div>
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Simple high-converting websites</p>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing">
+    <h2>Pricing Plans 💰</h2>
+    <div class="container grid grid-3">
+      <div class="card">
+        <h3>Starter</h3>
+        <h2>₹2999/mo</h2>
+        <p>8 Posts • 4 Reels • Captions</p>
+      </div>
+      <div class="card">
+        <h3>Growth</h3>
+        <h2>₹4999/mo</h2>
+        <p>15 Posts • 10 Reels • Management</p>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <h2>₹7999/mo</h2>
+        <p>25 Posts • 20 Reels • Full + Website</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="hero">
+    <h2>Let’s Grow Your Brand</h2>
+    <div class="social">
+      <a href="https://www.instagram.com/reelify_std/#" target="_blank">Instagram</a>
+      <a href="https://wa.me/919750168130" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919750168130" class="whatsapp" target="_blank">💬</a>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2026 Reelify. All rights reserved.
+  </div>
+
+</body>
+</html>
